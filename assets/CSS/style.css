@@ -84,6 +84,7 @@ p {
   margin: auto;
   overflow: hidden;
   z-index: 999;
+  background: none;
 
   /* position:fixed; */
 }
@@ -104,6 +105,15 @@ p {
   float: right;
   width: 370px;
   overflow: hidden;
+}
+.navbar  .menu{
+ 
+  color: rgb(179, 169, 169);
+ 
+  width: 10%;
+  float: right;
+ font-size: 30px;
+  margin-left: 20px; 
 }
 
 .content-left .navbar-list .nav-item {
@@ -150,9 +160,12 @@ p {
      transform: translate3d(0px, -126.32px, 0px); */
   background-size: cover;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
   background-attachment: fixed;
   background-position: 50% 45%;
+  /* background-size: 100%; */
+ 
+  background-repeat: no-repeat;
 }
 
 .header .header-top {
