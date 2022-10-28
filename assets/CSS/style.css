@@ -106,14 +106,13 @@ p {
   width: 370px;
   overflow: hidden;
 }
-.navbar  .menu{
- 
+.navbar .menu {
   color: rgb(179, 169, 169);
- 
+
   width: 10%;
   float: right;
- font-size: 30px;
-  margin-left: 20px; 
+  font-size: 30px;
+  margin-left: 20px;
 }
 
 .content-left .navbar-list .nav-item {
@@ -164,7 +163,7 @@ p {
   background-attachment: fixed;
   background-position: 50% 45%;
   /* background-size: 100%; */
- 
+
   background-repeat: no-repeat;
 }
 
@@ -388,7 +387,6 @@ em {
   position: relative;
   overflow: hidden;
   margin-left: 420px;
-  margin-bottom: 25px;
 }
 .section2 .img1 {
   float: right;
@@ -482,6 +480,7 @@ em {
 }
 
 .enjoy .para p {
+  z-index: 999;
   color: #000;
   line-height: 1.5;
   font-size: 18px;
@@ -503,9 +502,7 @@ em {
 
 /************end enjoy section*************************************************/
 /*start menu section grouping some selectors from dish section*/
-.Menu {
-  /* background-color: aquamarine; */
-}
+
 .Menu .Menu-desc,
 .Dish .dish-desc {
   padding-top: 80px;
@@ -823,8 +820,10 @@ em {
   float: left;
 }
 .reservation .form .btn {
+  transition: all 0.15s;
+
   margin-left: 320px;
-  display: block;
+  display: inline-block;
   background-color: transparent;
   font-family: Lato, sans-serif;
   font-size: 0.75rem;
@@ -961,14 +960,36 @@ overflow: hidden;
   font-family: Playfair Display, serif !important;
   margin-bottom: 2rem !important;
   margin-top: 40px;
+  position: relative;
+  display: inline-block;
 }
 
 .testimonials .person .quote figure .blockquote > p:before {
   content: open-quote;
+  display: inline-block;
+  max-width: 100%;
+  font-size: 20px;
+  position: absolute;
+  left: -12px;
+  bottom: 90px;
+  position: absolute;
+  content: open-quote;
+  font-size: 1em;
+  margin-left: -0.6em;
+  margin-top: -0.4em;
 }
 .testimonials .person .quote figure .blockquote > p:after {
+  /* position: absolute;left: 38%;
+   */
   content: close-quote;
+  position: absolute;
+  font-size: 1rem;
+  bottom: 0;
+  right: 60%;
+  margin-right: -0.6em;
+  margin-bottom: -0.8em;
 }
+
 .testimonials .person .quote figure figcaption {
   font-family: Lato, sans-serif;
   font-size: 0.75rem;
@@ -981,7 +1002,7 @@ overflow: hidden;
   margin-top: -1rem;
 }
 
-.testimonials .person .quote figure figcaption:before {
+.testimonials .person .quote figure figcaption::after {
   content: "\2014\00A0";
 }
 
@@ -1173,8 +1194,7 @@ overflow: hidden;
   font-weight: 700;
   line-height: 1;
 }
-.events .events-bottom .event .time .month {
-}
+
 .events .events-bottom .event .details {
   float: left;
   width: 60%;
@@ -1426,8 +1446,6 @@ overflow: hidden;
 .footer .footer-top .center .list .item a {
   color: #f5a637;
   text-decoration: underline;
-}
-.footer .footer-top .center .list .item span {
 }
 
 .footer .footer-top .right {
